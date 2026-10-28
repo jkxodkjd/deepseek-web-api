@@ -1,0 +1,22 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+keystore.properties
+release.jks
+*.apk
+*.ap_
+*.dex
+
+# --- desktop (Windows) ---
+desktop/**/bin/
+desktop/**/obj/
+desktop/**/publish/
+desktop/**/out/
+desktop/**/*.user

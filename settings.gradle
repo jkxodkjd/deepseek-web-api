@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        // 本机 proot 环境的本地 Maven 仓库（仅在本机存在时启用，GitHub Actions 上自动跳过）
+        if (new File('/opt/maven-repo').exists()) {
+            maven { url = uri('/opt/maven-repo') }
+        }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        if (new File('/opt/maven-repo').exists()) {
+            maven { url = uri('/opt/maven-repo') }
+        }
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "DeepSeekWebAPI"
+include ":app"

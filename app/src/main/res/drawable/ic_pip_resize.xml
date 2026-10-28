@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 画中画按钮：切换窗口大小（四角外向箭头） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M21,9V3h-6v2h4v4H21z M3,9V3h6v2H5v4H3z M21,15v6h-6v-2h4v-4H21z M3,15v6h6v-2H5v-4H3z" />
+</vector>
